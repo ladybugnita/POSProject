@@ -17,7 +17,7 @@
             MessageBox.Show("Login Success", "information", MessageBoxButtons.OK, MessageBoxIcon.Information)
             password_error.Visible = False
             username_error.Visible = False
-            Form2.Show()
+            Dashboard.Show()
         Else
             MessageBox.Show("Error", "information", MessageBoxButtons.OK, MessageBoxIcon.Error)
             username_error.Visible = False
@@ -39,7 +39,7 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Form3.Show()
+        ForgetPassword.Show()
     End Sub
 End Class
 
