@@ -25,10 +25,10 @@ Partial Class ProductForm
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtProductName = New System.Windows.Forms.TextBox()
+        Me.txtProductID = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.txtProductID = New System.Windows.Forms.TextBox()
+        Me.txtProductName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.btnAddProduct = New System.Windows.Forms.Button()
@@ -37,19 +37,24 @@ Partial Class ProductForm
         Me.ForgetpasswordvbDataSet = New POSProject.forgetpasswordvbDataSet()
         Me.ProductsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductsTableAdapter = New POSProject.forgetpasswordvbDataSetTableAdapters.ProductsTableAdapter()
+        Me.ProductsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ForgetpasswordvbDataSet1 = New POSProject.forgetpasswordvbDataSet1()
+        Me.ProductsTableAdapter1 = New POSProject.forgetpasswordvbDataSet1TableAdapters.ProductsTableAdapter()
+        Me.ForgetpasswordvbDataSet15 = New POSProject.forgetpasswordvbDataSet15()
+        Me.ProductsBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductsTableAdapter2 = New POSProject.forgetpasswordvbDataSet15TableAdapters.ProductsTableAdapter()
         Me.dgvProducts = New System.Windows.Forms.DataGridView()
         Me.ProductIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProductNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PriceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.QuantityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProductsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ForgetpasswordvbDataSet1 = New POSProject.forgetpasswordvbDataSet1()
-        Me.ProductsTableAdapter1 = New POSProject.forgetpasswordvbDataSet1TableAdapters.ProductsTableAdapter()
         CType(Me.ForgetpasswordvbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvProducts, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ForgetpasswordvbDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ForgetpasswordvbDataSet15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvProducts, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -76,15 +81,15 @@ Partial Class ProductForm
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Product Name"
         '
-        'txtProductName
+        'txtProductID
         '
-        Me.txtProductName.BackColor = System.Drawing.Color.White
-        Me.txtProductName.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductName.Location = New System.Drawing.Point(143, 128)
-        Me.txtProductName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtProductName.Name = "txtProductName"
-        Me.txtProductName.Size = New System.Drawing.Size(132, 29)
-        Me.txtProductName.TabIndex = 2
+        Me.txtProductID.BackColor = System.Drawing.Color.White
+        Me.txtProductID.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProductID.Location = New System.Drawing.Point(143, 78)
+        Me.txtProductID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtProductID.Name = "txtProductID"
+        Me.txtProductID.Size = New System.Drawing.Size(132, 29)
+        Me.txtProductID.TabIndex = 2
         '
         'Label3
         '
@@ -104,15 +109,15 @@ Partial Class ProductForm
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'txtProductID
+        'txtProductName
         '
-        Me.txtProductID.BackColor = System.Drawing.Color.White
-        Me.txtProductID.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductID.Location = New System.Drawing.Point(143, 85)
-        Me.txtProductID.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtProductID.Name = "txtProductID"
-        Me.txtProductID.Size = New System.Drawing.Size(132, 29)
-        Me.txtProductID.TabIndex = 5
+        Me.txtProductName.BackColor = System.Drawing.Color.White
+        Me.txtProductName.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProductName.Location = New System.Drawing.Point(143, 121)
+        Me.txtProductName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtProductName.Name = "txtProductName"
+        Me.txtProductName.Size = New System.Drawing.Size(132, 29)
+        Me.txtProductName.TabIndex = 5
         '
         'Label4
         '
@@ -186,21 +191,47 @@ Partial Class ProductForm
         '
         Me.ProductsTableAdapter.ClearBeforeFill = True
         '
+        'ProductsBindingSource1
+        '
+        Me.ProductsBindingSource1.DataMember = "Products"
+        Me.ProductsBindingSource1.DataSource = Me.ForgetpasswordvbDataSet1
+        '
+        'ForgetpasswordvbDataSet1
+        '
+        Me.ForgetpasswordvbDataSet1.DataSetName = "forgetpasswordvbDataSet1"
+        Me.ForgetpasswordvbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductsTableAdapter1
+        '
+        Me.ProductsTableAdapter1.ClearBeforeFill = True
+        '
+        'ForgetpasswordvbDataSet15
+        '
+        Me.ForgetpasswordvbDataSet15.DataSetName = "forgetpasswordvbDataSet15"
+        Me.ForgetpasswordvbDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductsBindingSource2
+        '
+        Me.ProductsBindingSource2.DataMember = "Products"
+        Me.ProductsBindingSource2.DataSource = Me.ForgetpasswordvbDataSet15
+        '
+        'ProductsTableAdapter2
+        '
+        Me.ProductsTableAdapter2.ClearBeforeFill = True
+        '
         'dgvProducts
         '
         Me.dgvProducts.AllowUserToOrderColumns = True
         Me.dgvProducts.AutoGenerateColumns = False
         Me.dgvProducts.BackgroundColor = System.Drawing.Color.Lavender
-        Me.dgvProducts.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvProducts.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ProductIDDataGridViewTextBoxColumn, Me.ProductNameDataGridViewTextBoxColumn, Me.PriceDataGridViewTextBoxColumn, Me.QuantityDataGridViewTextBoxColumn})
-        Me.dgvProducts.DataSource = Me.ProductsBindingSource1
-        Me.dgvProducts.GridColor = System.Drawing.Color.MediumPurple
-        Me.dgvProducts.Location = New System.Drawing.Point(392, 11)
-        Me.dgvProducts.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvProducts.DataSource = Me.ProductsBindingSource
+        Me.dgvProducts.Location = New System.Drawing.Point(294, 12)
         Me.dgvProducts.Name = "dgvProducts"
         Me.dgvProducts.RowHeadersWidth = 51
-        Me.dgvProducts.Size = New System.Drawing.Size(601, 528)
+        Me.dgvProducts.RowTemplate.Height = 24
+        Me.dgvProducts.Size = New System.Drawing.Size(553, 150)
         Me.dgvProducts.TabIndex = 13
         '
         'ProductIDDataGridViewTextBoxColumn
@@ -236,20 +267,6 @@ Partial Class ProductForm
         Me.QuantityDataGridViewTextBoxColumn.Name = "QuantityDataGridViewTextBoxColumn"
         Me.QuantityDataGridViewTextBoxColumn.Width = 125
         '
-        'ProductsBindingSource1
-        '
-        Me.ProductsBindingSource1.DataMember = "Products"
-        Me.ProductsBindingSource1.DataSource = Me.ForgetpasswordvbDataSet1
-        '
-        'ForgetpasswordvbDataSet1
-        '
-        Me.ForgetpasswordvbDataSet1.DataSetName = "forgetpasswordvbDataSet1"
-        Me.ForgetpasswordvbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProductsTableAdapter1
-        '
-        Me.ProductsTableAdapter1.ClearBeforeFill = True
-        '
         'ProductForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -262,9 +279,9 @@ Partial Class ProductForm
         Me.Controls.Add(Me.btnAddProduct)
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtProductID)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtProductName)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtProductID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -272,9 +289,11 @@ Partial Class ProductForm
         Me.Text = "ProductForm"
         CType(Me.ForgetpasswordvbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvProducts, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ForgetpasswordvbDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ForgetpasswordvbDataSet15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductsBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvProducts, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -282,10 +301,10 @@ Partial Class ProductForm
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtProductName As TextBox
+    Friend WithEvents txtProductID As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents txtProductID As TextBox
+    Friend WithEvents txtProductName As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtPrice As TextBox
     Friend WithEvents btnAddProduct As Button
@@ -294,10 +313,13 @@ Partial Class ProductForm
     Friend WithEvents ForgetpasswordvbDataSet As forgetpasswordvbDataSet
     Friend WithEvents ProductsBindingSource As BindingSource
     Friend WithEvents ProductsTableAdapter As forgetpasswordvbDataSetTableAdapters.ProductsTableAdapter
-    Friend WithEvents dgvProducts As DataGridView
     Friend WithEvents ForgetpasswordvbDataSet1 As forgetpasswordvbDataSet1
     Friend WithEvents ProductsBindingSource1 As BindingSource
     Friend WithEvents ProductsTableAdapter1 As forgetpasswordvbDataSet1TableAdapters.ProductsTableAdapter
+    Friend WithEvents ForgetpasswordvbDataSet15 As forgetpasswordvbDataSet15
+    Friend WithEvents ProductsBindingSource2 As BindingSource
+    Friend WithEvents ProductsTableAdapter2 As forgetpasswordvbDataSet15TableAdapters.ProductsTableAdapter
+    Friend WithEvents dgvProducts As DataGridView
     Friend WithEvents ProductIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ProductNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PriceDataGridViewTextBoxColumn As DataGridViewTextBoxColumn

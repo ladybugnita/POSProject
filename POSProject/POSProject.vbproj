@@ -48,6 +48,12 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -76,7 +82,9 @@
     <Compile Include="BillingForm.Designer.vb">
       <DependentUpon>BillingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="BillingForm.vb" />
+    <Compile Include="BillingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerForm.Designer.vb">
       <DependentUpon>CustomerForm.vb</DependentUpon>
     </Compile>
@@ -92,6 +100,36 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>forgetpasswordvbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet10.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet12.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet13.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet14.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet151.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet151.xsd</DependentUpon>
     </Compile>
     <Compile Include="forgetpasswordvbDataSet2.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -122,6 +160,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>forgetpasswordvbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpasswordvbDataSet91.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forgetpasswordvbDataSet91.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -163,6 +211,12 @@
     <Compile Include="ProductForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReceiptForm.Designer.vb">
+      <DependentUpon>ReceiptForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BillingForm.resx">
@@ -189,6 +243,9 @@
     <EmbeddedResource Include="ProductForm.resx">
       <DependentUpon>ProductForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="forgetpasswordvbDataSet.xsc">
@@ -212,6 +269,72 @@
     </None>
     <None Include="forgetpasswordvbDataSet1.xss">
       <DependentUpon>forgetpasswordvbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet10.xsc">
+      <DependentUpon>forgetpasswordvbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet10.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet10.xss">
+      <DependentUpon>forgetpasswordvbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet11.xsc">
+      <DependentUpon>forgetpasswordvbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet11.xss">
+      <DependentUpon>forgetpasswordvbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet12.xsc">
+      <DependentUpon>forgetpasswordvbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet12.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet12.xss">
+      <DependentUpon>forgetpasswordvbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet13.xsc">
+      <DependentUpon>forgetpasswordvbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet13.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet13.xss">
+      <DependentUpon>forgetpasswordvbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet14.xsc">
+      <DependentUpon>forgetpasswordvbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet14.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet14.xss">
+      <DependentUpon>forgetpasswordvbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet151.xsc">
+      <DependentUpon>forgetpasswordvbDataSet151.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet151.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet151.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet151.xss">
+      <DependentUpon>forgetpasswordvbDataSet151.xsd</DependentUpon>
     </None>
     <None Include="forgetpasswordvbDataSet2.xsc">
       <DependentUpon>forgetpasswordvbDataSet2.xsd</DependentUpon>
@@ -279,6 +402,28 @@
     <None Include="forgetpasswordvbDataSet7.xss">
       <DependentUpon>forgetpasswordvbDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="forgetpasswordvbDataSet8.xsc">
+      <DependentUpon>forgetpasswordvbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet8.xss">
+      <DependentUpon>forgetpasswordvbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet91.xsc">
+      <DependentUpon>forgetpasswordvbDataSet91.xsd</DependentUpon>
+    </None>
+    <None Include="forgetpasswordvbDataSet91.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forgetpasswordvbDataSet91.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forgetpasswordvbDataSet91.xss">
+      <DependentUpon>forgetpasswordvbDataSet91.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -289,6 +434,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

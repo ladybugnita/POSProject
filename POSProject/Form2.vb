@@ -1,6 +1,7 @@
 ﻿Public Class Dashboard
     Public Sub Logout()
         Me.Close()
+        Form1.Close()
     End Sub
     Public Sub validateLogout()
         Dim result As DialogResult
@@ -27,5 +28,9 @@
 
     Private Sub Billingbtn_Click(sender As Object, e As EventArgs) Handles Billingbtn.Click
         BillingForm.Show()
+    End Sub
+
+    Private Sub Receiptbtn_Click(sender As Object, e As EventArgs) Handles Receiptbtn.Click
+        ReceiptForm.Show()
     End Sub
 End Class
