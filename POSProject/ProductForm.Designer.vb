@@ -231,7 +231,7 @@ Partial Class ProductForm
         Me.dgvProducts.Name = "dgvProducts"
         Me.dgvProducts.RowHeadersWidth = 51
         Me.dgvProducts.RowTemplate.Height = 24
-        Me.dgvProducts.Size = New System.Drawing.Size(553, 150)
+        Me.dgvProducts.Size = New System.Drawing.Size(601, 150)
         Me.dgvProducts.TabIndex = 13
         '
         'ProductIDDataGridViewTextBoxColumn
