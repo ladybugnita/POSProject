@@ -166,7 +166,7 @@ Partial Class Form1
         Me.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Login.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Login.ForeColor = System.Drawing.Color.MediumPurple
-        Me.Login.Location = New System.Drawing.Point(392, 293)
+        Me.Login.Location = New System.Drawing.Point(387, 316)
         Me.Login.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Login.Name = "Login"
         Me.Login.Size = New System.Drawing.Size(109, 42)

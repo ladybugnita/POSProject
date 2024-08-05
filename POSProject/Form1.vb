@@ -37,10 +37,6 @@
             txtpassword.UseSystemPasswordChar = False
         End If
     End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-        ForgetPassword.Show()
-    End Sub
 End Class
 
 
