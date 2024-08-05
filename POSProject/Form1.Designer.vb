@@ -34,7 +34,6 @@ Partial Class Form1
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.txtpassword = New System.Windows.Forms.TextBox()
         Me.Login = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.username_error = New System.Windows.Forms.Label()
         Me.password_error = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -52,18 +51,18 @@ Partial Class Form1
         Me.FlowLayoutPanel2.Controls.Add(Me.PictureBox1)
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(193, 309)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(257, 380)
         Me.FlowLayoutPanel2.TabIndex = 1
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(2, 2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(190, 306)
+        Me.PictureBox1.Size = New System.Drawing.Size(253, 377)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -71,10 +70,10 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(310, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Location = New System.Drawing.Point(413, 0)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(52, 59)
+        Me.PictureBox2.Size = New System.Drawing.Size(69, 73)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
@@ -85,10 +84,9 @@ Partial Class Form1
         Me.Label1.BackColor = System.Drawing.Color.Lavender
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.MediumPurple
-        Me.Label1.Location = New System.Drawing.Point(194, 79)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(259, 97)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(171, 22)
+        Me.Label1.Size = New System.Drawing.Size(210, 25)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Login Your Account"
         '
@@ -97,19 +95,19 @@ Partial Class Form1
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.txtusername)
-        Me.Panel1.Location = New System.Drawing.Point(197, 113)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Location = New System.Drawing.Point(263, 139)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(278, 28)
+        Me.Panel1.Size = New System.Drawing.Size(371, 34)
         Me.Panel1.TabIndex = 4
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(23, 28)
+        Me.PictureBox3.Size = New System.Drawing.Size(31, 34)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 7
         Me.PictureBox3.TabStop = False
@@ -119,11 +117,11 @@ Partial Class Form1
         Me.txtusername.BackColor = System.Drawing.Color.White
         Me.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtusername.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtusername.Location = New System.Drawing.Point(28, 2)
-        Me.txtusername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtusername.Location = New System.Drawing.Point(37, 2)
+        Me.txtusername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtusername.Multiline = True
         Me.txtusername.Name = "txtusername"
-        Me.txtusername.Size = New System.Drawing.Size(248, 24)
+        Me.txtusername.Size = New System.Drawing.Size(331, 30)
         Me.txtusername.TabIndex = 6
         '
         'Panel2
@@ -131,19 +129,19 @@ Partial Class Form1
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.PictureBox4)
         Me.Panel2.Controls.Add(Me.txtpassword)
-        Me.Panel2.Location = New System.Drawing.Point(197, 160)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Location = New System.Drawing.Point(263, 197)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(278, 28)
+        Me.Panel2.Size = New System.Drawing.Size(371, 34)
         Me.Panel2.TabIndex = 5
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(23, 28)
+        Me.PictureBox4.Size = New System.Drawing.Size(31, 34)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 8
         Me.PictureBox4.TabStop = False
@@ -153,12 +151,12 @@ Partial Class Form1
         Me.txtpassword.BackColor = System.Drawing.Color.White
         Me.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtpassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpassword.Location = New System.Drawing.Point(28, 2)
-        Me.txtpassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtpassword.Location = New System.Drawing.Point(37, 2)
+        Me.txtpassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtpassword.Multiline = True
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtpassword.Size = New System.Drawing.Size(248, 24)
+        Me.txtpassword.Size = New System.Drawing.Size(331, 30)
         Me.txtpassword.TabIndex = 7
         '
         'Login
@@ -168,34 +166,20 @@ Partial Class Form1
         Me.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Login.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Login.ForeColor = System.Drawing.Color.MediumPurple
-        Me.Login.Location = New System.Drawing.Point(294, 238)
-        Me.Login.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Login.Location = New System.Drawing.Point(392, 293)
+        Me.Login.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(82, 34)
+        Me.Login.Size = New System.Drawing.Size(109, 42)
         Me.Login.TabIndex = 6
         Me.Login.Text = "Login"
         Me.Login.UseVisualStyleBackColor = False
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.MediumPurple
-        Me.LinkLabel1.Location = New System.Drawing.Point(261, 284)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(145, 19)
-        Me.LinkLabel1.TabIndex = 8
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "forget your password?"
-        '
         'username_error
         '
         Me.username_error.AutoSize = True
-        Me.username_error.Location = New System.Drawing.Point(223, 144)
-        Me.username_error.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.username_error.Location = New System.Drawing.Point(297, 177)
         Me.username_error.Name = "username_error"
-        Me.username_error.Size = New System.Drawing.Size(107, 13)
+        Me.username_error.Size = New System.Drawing.Size(136, 16)
         Me.username_error.TabIndex = 9
         Me.username_error.Text = "username is required!"
         Me.username_error.Visible = False
@@ -203,10 +187,9 @@ Partial Class Form1
         'password_error
         '
         Me.password_error.AutoSize = True
-        Me.password_error.Location = New System.Drawing.Point(226, 191)
-        Me.password_error.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.password_error.Location = New System.Drawing.Point(301, 235)
         Me.password_error.Name = "password_error"
-        Me.password_error.Size = New System.Drawing.Size(106, 13)
+        Me.password_error.Size = New System.Drawing.Size(135, 16)
         Me.password_error.TabIndex = 10
         Me.password_error.Text = "password is required!"
         Me.password_error.Visible = False
@@ -216,24 +199,23 @@ Partial Class Form1
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.ForeColor = System.Drawing.Color.MediumPurple
-        Me.CheckBox1.Location = New System.Drawing.Point(197, 214)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBox1.Location = New System.Drawing.Point(263, 263)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(126, 21)
+        Me.CheckBox1.Size = New System.Drawing.Size(151, 24)
         Me.CheckBox1.TabIndex = 11
         Me.CheckBox1.Text = "Show Password"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
-        Me.ClientSize = New System.Drawing.Size(476, 309)
+        Me.ClientSize = New System.Drawing.Size(635, 380)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.password_error)
         Me.Controls.Add(Me.username_error)
-        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Login)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -241,7 +223,7 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.FlowLayoutPanel2.ResumeLayout(False)
@@ -269,7 +251,6 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Login As Button
-    Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents username_error As Label
     Friend WithEvents password_error As Label
     Friend WithEvents CheckBox1 As CheckBox
