@@ -1,1 +1,1 @@
-This is the 1 credit hour VB.Net Project for the 4th Semester of BCA.
+This is a one credit hour project made in visual studio integrated development environment (IDE) for coding, testing and debugging the code. VB.Net programming language is used to develop the core functionalities and user interfaces of the system. Microsoft SQL Server is used to manage and store the data of customers and products.
